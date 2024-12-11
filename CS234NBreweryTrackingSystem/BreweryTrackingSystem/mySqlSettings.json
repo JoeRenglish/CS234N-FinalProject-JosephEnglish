@@ -1,0 +1,6 @@
+﻿{
+  "ConnectionStrings": {
+    "mySql": "server=127.0.0.1;uid=root;pwd=Applecherry1991;database=bits"
+  }
+}
+
