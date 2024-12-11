@@ -36,7 +36,7 @@ namespace BreweryTrackingSystem.models
 
         public virtual Equipment? Equipment { get; set; }
         public virtual Mash? Mash { get; set; }
-        public virtual Style Style { get; set; } = null!;
+        public virtual Style? Style { get; set; } = null!;
         public virtual ICollection<Batch> Batches { get; set; }
         public virtual ICollection<RecipeIngredient> RecipeIngredients { get; set; }
     }
