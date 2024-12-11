@@ -51,7 +51,16 @@ namespace BreweryTrackingSystemTests
                 .OrderBy(i => i.Name).ToList();
             Assert.AreEqual(1, recipes.Count);
             Assert.AreEqual("Krampus' Special Sauce", recipes[0].Name);
+        }
 
+        [Test]
+        public void UpdateTest()
+        {
+            r = dbContext.Recipes.Find(1);
+            r.Volume = 37.8541178;
+            dbContext.SaveChanges();
+            r = dbContext.Recipes.Find(1);
+            Assert.AreEqual(37.8541178, r.Volume);
         }
     }
 }
